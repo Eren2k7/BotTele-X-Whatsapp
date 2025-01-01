@@ -1,6 +1,8 @@
 # Menggunakan Alpine Linux sebagai base image
 FROM alpine:latest
 
+USER root
+
 # Instalasi dasar
 RUN apk update && apk add --no-cache \
     bash \
